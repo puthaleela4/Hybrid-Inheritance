@@ -26,7 +26,7 @@ class Stu(Branch,Course,University):
 class Fac(Branch):
     def __init__(self,uni_name,b_name,f_name):
         Branch.__init__(self,uni_name,b_name)
-        #University.__init__(self,uni_name)
+        University.__init__(self,uni_name)
         self.f_name=f_name
     def Showdetails_F(self):
         print(f"faculty name is:{self.f_name} and branch is :{self.b_name} and university is :{self.uni_name}")
